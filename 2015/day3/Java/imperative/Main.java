@@ -30,6 +30,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
+        System.out.println("Processing: " + args[0]);
         giftHouses = new HashMap<String, Boolean>();
         giftHouses.put(buildCoordinates(currentXCoordinate, currentYCoordinate), true);
         args[0].chars().forEach(direction -> insertNextHouse((char) direction));
