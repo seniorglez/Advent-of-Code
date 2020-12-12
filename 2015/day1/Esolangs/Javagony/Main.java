@@ -17,14 +17,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Processing: " + args[0]);
         try {
-            reverseString(args[0]);
+            loopString(args[0]);
         } catch (StringIndexOutOfBoundsException e) {
             System.out.println(floor);
         }
         
     }
 
-    public static String reverseString(String myStr)
+    public static String loopString(String myStr)
 	{
         int a = myStr.charAt(0);
         try {
@@ -34,6 +34,6 @@ public class Main {
             ++floor;
         }
         --floor;
-		return reverseString(myStr.substring(1)) + myStr.charAt(0);
+		return loopString(myStr.substring(1)) + myStr.charAt(0);
 	}
 }
