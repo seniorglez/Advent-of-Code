@@ -21,7 +21,6 @@ public class Main {
         } catch (StringIndexOutOfBoundsException e) {
             System.out.println(floor);
         }
-        
     }
 
     public static String loopString(String myStr)
@@ -34,6 +33,6 @@ public class Main {
             ++floor;
         }
         --floor;
-		return loopString(myStr.substring(1)) + myStr.charAt(0);
+		return loopString(myStr.substring(1));
 	}
 }
