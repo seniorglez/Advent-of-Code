@@ -1,3 +1,16 @@
+/**
+ * Javagony is an OOP programming language derived from Java. The only differences to Java are that following statements are not available in Javagony:
+ *
+ * for (){}
+ * if (){} //including else and else if
+ * while (){}
+ * do {} while ();
+ * switch(){}
+ * ?:
+ * 
+ * For more information check it's wiki page https://esolangs.org/wiki/Javagony
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 
