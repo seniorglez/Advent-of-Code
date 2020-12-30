@@ -1,0 +1,15 @@
+compile:
+	javac Main.java
+run: compile
+	java Main '('
+	java Main '(())' 
+	java Main '()()'
+	java Main '(((' 
+	java Main '(()(()('
+	java Main '))((((('
+	java Main '())'
+	java Main '))('
+	java Main ')))'
+	java Main ')())())'
+clean: 
+	rm Main.class
