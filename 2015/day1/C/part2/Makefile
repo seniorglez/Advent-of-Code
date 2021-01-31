@@ -1,6 +1,6 @@
-main: main.c
+compile: main.c
 	gcc -Wall main.c -o main
-run: main
+run: compile
 	./main '('
 	./main '(())' 
 	./main '()()'
